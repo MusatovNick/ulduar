@@ -56,7 +56,13 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "ng lint"
+      "pre-commit": "lint-staged --relative"
     }
+  },
+  "lint-staged": {
+    "src/**/*.{js,ts,scss,md,html,json}": [
+      "npm run lint",
+      "git add"
+    ]
   }
 }
