@@ -60,8 +60,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "ng lint && lint-staged",
-      "pre-push": "ng build --prod"
+      "pre-commit": "ng lint"
     }
   }
 }

@@ -9,11 +9,11 @@ export class AppComponent implements OnInit {
   title = 'ulduar';
 
   ngOnInit() {
-    console.log('asdf asdf asasd' );
+    console.log('as asdf asd asddf asdf asasd' );
 
     const a = { b: 3 };
 
-    console.log(a, 'asdfasd 111' );
+    console.log(a, 'asdfa 111 sd 111' );
   }
 
   getA() {
