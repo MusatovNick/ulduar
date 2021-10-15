@@ -56,7 +56,7 @@
   },
   "lint-staged": {
     "src/**/*.{js,ts,scss,md,html,json}": [
-      "npm run lint",
+      "npm run lint && git branch | grep \"*\" | egrep -v \"^* master$\" \"^* dev$\"",
       "git add"
     ]
   },
