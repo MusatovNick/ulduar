@@ -21,7 +21,12 @@
         "airbnb-typescript/base"
       ],
       "rules": {
+        "arrow-parens": [2, "as-needed"],
+        "class-methods-use-this": 0,
         "import/prefer-default-export": "off",
+        "no-console": "error",
+        "no-debugger": "error",
+        "no-alert": "error",
         "@angular-eslint/directive-selector": [
           "error",
           {
@@ -47,7 +52,9 @@
       "extends": [
         "plugin:@angular-eslint/template/recommended"
       ],
-      "rules": {}
+      "rules": {
+        "max-len": ["error", { "code": 80 }]
+      }
     }
   ]
 }
