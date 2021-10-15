@@ -42,7 +42,7 @@
     "eslint-config-airbnb-typescript": "^14.0.1",
     "eslint-plugin-import": "^2.25.2",
     "eslint-plugin-jasmine": "^4.1.2",
-    "husky": "^7.0.2",
+    "husky": "^4.3.8",
     "init": "^0.1.2",
     "jasmine-core": "~3.8.0",
     "karma": "~6.3.0",
@@ -54,15 +54,15 @@
     "npx": "^10.2.2",
     "typescript": "~4.3.5"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged --relative"
-    }
-  },
   "lint-staged": {
     "src/**/*.{js,ts,scss,md,html,json}": [
       "npm run lint",
       "git add"
     ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint"
+    }
   }
 }
