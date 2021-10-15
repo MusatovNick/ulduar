@@ -54,15 +54,15 @@
     "npx": "^10.2.2",
     "typescript": "~4.3.5"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
   "lint-staged": {
     "src/**/*.{js,ts,scss,md,html,json}": [
       "npm run lint",
       "git add"
     ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
   }
 }
